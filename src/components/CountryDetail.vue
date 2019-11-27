@@ -1,8 +1,10 @@
 <template lang="html">
-  <div v-if="country" class="">
+  <div id="country-detail-container"v-if="country" class="">
     <h3>{{country.name}}</h3>
     <p>{{country.capital}}</p>
-    <img :src= 'country.flag' alt="">
+    <img id="country-flag" :src= 'country.flag' alt="">
+
+
   </div>
 </template>
 
@@ -15,4 +17,5 @@ export default {
 </script>
 
 <style lang="css" scoped>
+
 </style>
